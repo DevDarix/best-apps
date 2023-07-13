@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="referrer" content="no-referrer">
+    <title>Loading</title>
+    <link href="sources/styles.css" rel="stylesheet">
+    <script type="text/javascript" src="../onelink-smart-script-v1.js"></script>
+    <script type="text/javascript" src="../core.js"></script>
+    <style type="text/css">
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            position: relative;
+            overflow: hidden;
+            background-color: #94919152;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        body:before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: '';
+            width: 100%;
+            height: 100%;
+        }
+
+        .cont {
+            width: 280px;
+            height: 280px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+
+        .cont svg {
+            height: 100%;
+            width: 100%;
+        }
+
+        .mobile {
+            top: 12%;
+            margin-top: 0;
+        }
+
+        .wrapper {
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body >
+    <div class="wrapper">
+        <div tabindex="-1" class="window">
+            <h1 class="window__title">If you want clean up your iPhone</h1>
+            <ul class="window-list">
+                <li><img src="./sources/youtube.svg" alt="youtube logo"><span>Gb 2.1</span></li>
+                <li><img src="./sources/whatsapp.svg" alt="WhatsApp logo"><span>Mb 698</span></li>
+                <li><img src="./sources/instagram.svg" alt="Instagram logo"><span>Gb 2.6</span></li>
+                <li><img src="./sources/gmail.svg" alt="Gmail logo"><span>Mb 163</span></li>
+                <li><img src="./sources/app-store.svg" alt="App store logo"><span>Gb 3.7</span></li>
+            </ul>
+            <a type="button" class="window__btn" href="https://some-link.onelink.me/nPh7?pid=web_facebook&amp;c=LP_001">
+                <span>Install now</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="referrer" content="no-referrer">
+    <title>Loading</title>
+    <link href="sources/styles.css" rel="stylesheet">
+    <script type="text/javascript" src="../onelink-smart-script-v1.js"></script>
+    <script type="text/javascript" src="../core.js"></script>
+    <style type="text/css">
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            position: relative;
+            overflow: hidden;
+            background-color: #94919152;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        body:before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: '';
+            width: 100%;
+            height: 100%;
+        }
+
+        .cont {
+            width: 280px;
+            height: 280px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+
+        .cont svg {
+            height: 100%;
+            width: 100%;
+        }
+
+        .mobile {
+            top: 12%;
+            margin-top: 0;
+        }
+
+        .wrapper {
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+<div class="wrapper">
+    <div tabindex="-1" class="window">
+        <h1 class="window__title">Cleaner Update for Apple is Recomended!</h1>
+        <p class="window__text">
+            Your Apple iPhone can work faster, we released a Cleaner update, and it recommended for every phone.
+        </p>
+        <p class="window__text">
+            Your Apple might be slowed down and your battery may discharge quickly.
+        </p>
+        <p class="window__text">
+            Update now for <b>FREE on Store</b> to clean and boost your Apple immediately!
+        </p>
+        <div class="window-timer">
+            <p><span id="min">0 </span> minutes <span id="sec">00 </span> seconds</p>
+        </div>
+        <div class="window-btn__wrapper">
+            <a href="https://some-link.onelink.me/nPh7?pid=web_facebook&amp;c=LP_001" class="window__btn cancel">
+                <span>Cancel</span>
+            </a>
+            <a class="window__btn update" href="https://some-link.onelink.me/nPh7?pid=web_facebook&amp;c=LP_001">
+                <span>Update Now</span>
+            </a>
+        </div>
+    </div>
+</div>
+<script>
+    function timer() {
+        let seconds = document.querySelector('#sec'), minutes = document.querySelector('#min')
+        count = 312;
+        minutes.textContent = Math.floor(count / 60);
+        seconds.textContent = count % 60;
+        let timerId = setInterval(changeCount, 1000);
+
+        function changeCount() {
+            if (count > 0) {
+                count--;
+                minutes.textContent = Math.floor(count / 60);
+                seconds.textContent = count % 60;
+            } else {
+                setTimeout(() => {
+                    count = 312;
+                }, 20000);
+            }
+        }
+    }
+
+    timer();
+</script>
+</body>
+</html>

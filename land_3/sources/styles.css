@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --bg: #ffffff;
+    --textW: #fff;
+    --text: #333333;
+    --btnBr: #1a73e9;
+    --gradFr: #1a73e9;
+    --gradSc: #6c92f4;
+    --timer: red;
+}
+
+.window {
+    height: auto;
+    width: 100%;
+    max-width: 320px;
+    z-index: 101;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    text-align: center;
+    font-family: Inter;
+    padding: 20px 15px;
+    box-sizing: border-box;
+}
+
+.window__title {
+    font-family: inherit;
+    font-size: 28px;
+    margin: 0 0 10px;
+    font-weight: 700;
+}
+
+.window__img {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 10px;
+    border-radius: 8px;
+}
+
+
+.window__btn {
+    width: 100%;
+    height: 47px;
+    vertical-align: middle;
+    font-family: inherit;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-weight: 500;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 45px;
+    border: none;
+    display: block;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.window__btn.update {
+    background: linear-gradient(270deg,var(--gradFr) 0,var(--gradSc) 100%);
+    box-shadow: 0 2px 4px rgba(38,50,56,.08), 0 4px 6px rgba(38,50,56,.08);
+    color: var(--textW);
+}

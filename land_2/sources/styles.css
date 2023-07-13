@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --bg: #ffffff;
+    --textW: #fff;
+    --text: #333333;
+    --btnBr: #1a73e9;
+    --gradFr: #1a73e9;
+    --gradSc: #6c92f4;
+    --timer: red;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    position: relative;
+    background-color: var(--bg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Inter;
+    overflow: hidden;
+}
+
+.first-screen {
+    width: 100%;
+    height: 40vh;
+    background: url(./bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center
+}
+
+.first-screen:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.title {
+    position: relative;
+    z-index: 1;
+    color: var(--textW);
+    text-align: center;
+    text-shadow: var(--text) 2px 0px;
+    margin: 0 auto;
+    max-width: 320px;
+    font-size: 3.5vmax;
+}
+
+.hidden {
+    font-size: 0;
+    visibility: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.content {
+    padding: 3vh 0;
+}
+
+.window-list {
+    text-align: left;
+    font-size: 2vmax;
+    padding-left: 20px;
+}
+.window-list li{
+    width: 100%;
+}
+
+.window__text {
+    font-size: 2vmax;
+    margin: 0 0 10px;
+    text-align: justify;
+
+}
+
+.window__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+    padding-bottom: 0;
+
+}
+
+.window__content img{
+    width: 110px;
+    height: 110px;
+    margin-right: 10px;
+}
+.window__content p {
+    padding: 0 0 10px 0;
+    margin: 0;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.window__btn {
+    width: 100%;
+    min-height: 45px;
+    height: 6vh;
+    line-height: 6vh;
+    vertical-align: middle;
+    font-family: inherit;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-weight: 500;
+    border-radius: 6px;
+    font-size: 2vmax;
+    border: none;
+    display: block;
+    text-decoration: none;
+    color: var(--text);
+    text-align: center;
+}
+
+.window__btn span {
+    color: var(--btnBr);
+}
+
+.window__btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.window-btn__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 11px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.window__btn:hover {
+    cursor: pointer;
+}
+
+.window-timer {
+    color: var(--timer);
+    font-weight: 600;
+    margin: 30px 0;
+}
+@media screen and (min-width: 768px){
+    .first-screen {
+        height: 50vh;
+    }
+    .title {
+        max-width: 560px;
+    }
+    .window-list {
+        padding-left: 27px;
+    }
+    .window__text {
+        text-align: left;
+    }
+}
+@media screen and (min-width: 1280px){
+    .first-screen {
+        height: 50vh;
+    }
+    .title {
+        font-size: 5vmin;
+        max-width: 867px;
+    }
+    .window__text, .window-list {
+        font-size: 2vmin;
+    }
+    .window__btn {
+        font-size: 2vmin;
+        line-height: 6vmin;
+        height: 6vmin;
+    }
+    .window-btn__wrapper {
+        margin-top: 4vh;
+    }
+}
+@media screen and (min-width: 1600px){
+    .window-list {
+        padding-left: 31px;
+    }
+
+}

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --bg: #222222;
+    --textW: #fff;
+    --text: #eeeeee;
+    --btnBr: #78aef6;
+    --shadow: rgb(16 11 11);
+}
+
+.window {
+    height: auto;
+    width: 100%;
+    max-width: 320px;
+    z-index: 101;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    color: var(--text);
+    background: var(--bg);
+    border-radius: 12px;
+    text-align: center;
+    font-family: Inter;
+    box-sizing: border-box;
+}
+
+.window__title {
+    font-family: inherit;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 0 20px;
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+.window__text {
+    font-size: 16px;
+    margin: 0 0 20px;
+    text-align: left;
+}
+
+.window__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+    padding-bottom: 0;
+
+}
+
+.window__content img{
+    width: 110px;
+    height: 110px;
+    margin-right: 10px;
+}
+.window__content p {
+    padding: 0 0 10px 0;
+    margin: 0;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.window-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    max-width: 210px;
+    margin: 15px auto;
+}
+
+.window-list li {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.window-list li:first-child {
+    width: 70%;
+}
+
+.window-list img {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    box-shadow: 2px 2px 5px 2px var(--shadow);
+}
+
+.window-list span {
+    color: var(--text);
+}
+.window__btn {
+    width: 100%;
+    height: 47px;
+    vertical-align: middle;
+    font-family: inherit;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 45px;
+    border: none;
+    display: block;
+    text-decoration: none;
+    color: var(--btnBr);
+    border-top: 1px solid rgba(101, 101, 101, 0.6);
+    cursor: pointer;
+}
+
