@@ -8,10 +8,16 @@ const onelinkURLS = {
     'sccup': 'https://secretcleaner.onelink.me/UifS',
 }
 const mediaSources = ['fb', 'tiktok'];
+
 window.onload = function () {
     let app = getParameterFromURL('app');
     let oneLinkURL = null;
     let mediaSource = getParameterFromURL('ms');
+    window.sendEvent = (eventName) =>{
+        if (mediaSource === 'fb') {
+            //fbq('track', eventName);
+        }
+    }
     if (window.oneLinkURL) {
         oneLinkURL = window.oneLinkURL;
     } else if (window.oneLinkURLKey && onelinkURLS[window.oneLinkURLKey]) {
