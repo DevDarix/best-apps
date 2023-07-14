@@ -14,6 +14,8 @@ window.onload = function () {
     let mediaSource = getParameterFromURL('ms');
     if (window.oneLinkURL) {
         oneLinkURL = window.oneLinkURL;
+    } else if (window.oneLinkURLKey && onelinkURLS[window.oneLinkURLKey]) {
+        oneLinkURL = onelinkURLS[window.oneLinkURLKey];
     } else if (app && onelinkURLS[app]) {
         oneLinkURL = onelinkURLS[app];
     }
