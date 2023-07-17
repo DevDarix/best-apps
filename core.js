@@ -54,17 +54,16 @@ window.onload = function () {
                 skipList: []
             }
         );
+        onelinkGenerator.setAfSub1("clid");
         onelinkGenerator.setAdset("adset");
         onelinkGenerator.setAd("ad");
         onelinkGenerator.setCustomParameter("prt", "prt");
 
         if (mediaSource === 'fb') {
-            onelinkGenerator.setAfSub1("fbclid");
             onelinkGenerator.setAfSub2(null, getCookie("_fbc"));
             onelinkGenerator.setAfSub3(null, getCookie("_fbp"));
             onelinkGenerator.setAfSub4(null, window.navigator.userAgent);
         } else if(mediaSource === 'tiktok') {
-            onelinkGenerator.setAfSub1("ttclid");
             onelinkGenerator.setAfSub4(null, window.navigator.userAgent);
         }
 
