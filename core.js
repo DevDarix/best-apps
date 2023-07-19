@@ -57,7 +57,7 @@ window.onload = function () {
         onelinkGenerator.setAfSub1("clid");
         onelinkGenerator.setCustomParameter("clid", 'clickid');//Дополнительно попробуем прокинуть в clickid AF
         //прокидывание af параметров
-        for (let param of ['adset', 'adset_id', 'ad_id', 'ad', 'ad_type', 'siteid', 'channel', 'c_id', 'viewthrough_lookback', 'lang']) {
+        for (let param of ['adset', 'adset_id', 'ad_id', 'ad', 'ad_type', 'siteid', 'channel', 'c_id', 'viewthrough_lookback']) {
             onelinkGenerator.setCustomParameter(param, 'af_' + param);
         }
         onelinkGenerator.setCustomParameter("prt", "prt");
