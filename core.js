@@ -8,6 +8,7 @@ const ttPixelID = 'CIDEFIRC77U0O25FGTVG';
 const fbPixelID = '';
 const onelinkURLS = {
     'sccup': 'https://secretcleaner.onelink.me/UifS',
+    'sr': 'https://adsroute.security-reactor.com/DXYV',
 }
 const mediaSources = ['fb', 'tiktok'];
 
@@ -61,6 +62,7 @@ window.onload = function () {
             onelinkGenerator.setCustomParameter(param, 'af_' + param);
         }
         onelinkGenerator.setCustomParameter("prt", "prt");
+        onelinkGenerator.setCustomParameter(null, 'af_adset', window.location.pathname);
 
         if (mediaSource === 'fb') {
             onelinkGenerator.setAfSub2(null, getCookie("_fbc"));
