@@ -1,0 +1,65 @@
+.window {
+    height: auto;
+    width: 100%;
+    color: #000;
+    text-align: center;
+    max-width: 470px;
+    margin: 0 auto;
+}
+
+.window__img {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    position: relative;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.window__title {
+    font-family: inherit;
+    font-size: 19px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.window__list {
+    list-style: none;
+    counter-reset: item;
+    padding-left: 0px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.window__list li {
+    margin: 15px 0;
+}
+
+.window__list li:before{
+    counter-increment: item;
+    content: "Step " counter(item) ": ";
+    font-weight: 600;
+}
+
+.window__btn {
+    background-color: #0c84f7;
+    color: #fff;
+    font-size: 130%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 12px 45px;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    -webkit-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+    text-transform: uppercase;
+}
+.window__btn:hover {
+    cursor: pointer;
+    background-color: #b3c833;
+    color: #fff;
+}
