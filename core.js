@@ -16,7 +16,7 @@ const onelinkURLS = {
         url: 'https://adsroute.security-reactor.com/DXYV',
         pixels: {
             fb: '',
-            tiktok: ''
+            tiktok: 'CJAF8QRC77U0073JQRO0'
         }
     }
 }
