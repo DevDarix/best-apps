@@ -9,7 +9,7 @@ const onelinkURLS = {
         url: 'https://secretcleaner.onelink.me/UifS',
         pixels: {
             fb: '',
-            tiktok: 'CJ6FOFBC77U5K7SP5V20'
+            tiktok: 'CJS5F8JC77U5E7967DPG'
         }
     },
     'sr': {
